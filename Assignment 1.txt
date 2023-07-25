@@ -1,0 +1,41 @@
+function isprime(number)
+{
+    var flag=1;
+    for(var i=2; i<number; i++)
+    {
+        if(number%i==0)
+        {
+            flag=0;
+        }
+    }
+    if(flag==0)
+    {
+        console.log("not a prime number")
+    }
+    else{
+        console.log("prime number")
+    }
+}
+console.log(isprime(1))
+console.log(isprime(10))
+console.log(isprime(5))
+
+
+
+function isArmstrongNumber(number)
+ {
+    const numString = number.toString();
+    const numDigits = numString.length;
+    let sum = 0;
+  
+    for (let digit of numString) {
+      sum += Math.pow(parseInt(digit), numDigits);
+    }
+  
+    return sum === number;
+  }
+
+  console.log(isArmstrongNumber(153))
+  console.log(isArmstrongNumber(50))
+  console.log(isArmstrongNumber(256))
+  console.log(isArmstrongNumber(370))

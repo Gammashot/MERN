@@ -1,0 +1,46 @@
+const array1=[25, 56, 69, 78 ,99]
+const array2=[56,45,86,45,21,47,56]
+const mergearray=[...array1,...array2]
+console.log("array1 is = " ,array1)
+console.log("array2 is = " ,array2)
+console.log("combined array is = ", mergearray)
+function sum(mergearray) 
+{
+    let sum = 0;
+    for (let i = 0; i < mergearray.length; i++) 
+    {
+      sum += mergearray[i];
+    }
+    return sum;
+  }
+  ("sum of array1 is = " console.log(sum(array1)));
+ console.log(sum(array2));
+ console.log(sum(mergearray));
+  
+
+const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+const currentDate = new Date();
+const today= currentDate.getDay();
+const year = currentDate.getFullYear();
+const month = currentDate.getMonth() + 1; 
+const day = currentDate.getDate();
+const hours = currentDate.getHours();
+const minutes = currentDate.getMinutes();
+const seconds = currentDate.getSeconds();
+const format = `${day}-${month}-${year} ${hours}:${minutes}:${seconds}`
+console.log("day of the week is =  ", daysOfWeek[today]);
+console.log("current date and time =  ", format);
+
+
+
+const currentDate = new Date();
+const year = currentDate.getFullYear();
+const month = currentDate.getMonth() + 1;
+const day = currentDate.getDate();
+const formattedDate = `
+${day}-${month}-${year},
+${day}/${month}/${year},
+${month}-${day}-${year},
+${month}/${day}/${year}.`
+console.log("different formats of representing dates = " , formattedDate)
